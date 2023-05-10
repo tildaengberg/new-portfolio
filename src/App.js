@@ -1,7 +1,6 @@
-import './App.css'
 import Home from './pages/Home/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Project from './pages/Projects/Project'
+import Project from './pages/Project'
 import Text from './components/Text'
 import { COLORS } from './config/colors'
 import styled from 'styled-components'

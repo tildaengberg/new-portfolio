@@ -6,8 +6,6 @@ import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa'
 import { COLORS } from '../config/colors'
 import { GAP } from '../config/gap'
 
-// TODO: Link
-
 const About = ({ headline, children, image }) => {
   return (
     <Container>
