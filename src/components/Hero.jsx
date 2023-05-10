@@ -4,6 +4,7 @@ import Button from './Button'
 import { GAP } from '../config/gap'
 import Box from '../config/Box'
 import { COLORS } from '../config/colors'
+import { Link } from 'react-scroll'
 
 const Hero = ({ headline, children, image }) => {
   return (
@@ -13,7 +14,9 @@ const Hero = ({ headline, children, image }) => {
           <TextWrapper>
             <Text textStyle='h1'>{headline}</Text>
             <Text>{children}</Text>
-            <Button>Contact me!</Button>
+            <Link to='about' smooth={true} duration={500}>
+              <Button>Contact me!</Button>
+            </Link>
           </TextWrapper>
           <ImageWrapper src={image}></ImageWrapper>
         </Wrapper>

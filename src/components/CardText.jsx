@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Text from './Text'
 import styled from 'styled-components'
 import { GAP } from '../config/gap'
 
 const CardText = ({ headline, children, imageSrc, flipped = false }) => {
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+  })
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize, false)
+  }, [])
+
+  const handleResize = () => {
+    setDimensions({
+      width: window.innerWidth,
+    })
+  }
+
   return (
     <Wrapper>
-      {flipped ? (
+      {dimensions.width < 991 ? (
+        <>
+          <TextWrapper>
+            <Text textStyle='h2'>{headline}</Text>
+            <Text>{children}</Text>
+          </TextWrapper>
+          <ImageWrapper>
+            <img src={imageSrc} alt='Project' />
+          </ImageWrapper>
+        </>
+      ) : flipped ? (
         <>
           <TextWrapper>
             <Text textStyle='h2'>{headline}</Text>
@@ -40,6 +64,10 @@ const Wrapper = styled.div`
   align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 `
 
 const TextWrapper = styled.div`
@@ -54,5 +82,10 @@ const ImageWrapper = styled.div`
   img {
     max-width: 30vw;
     height: auto;
+  }
+  @media (max-width: 991px) {
+    img {
+      max-width: 85vw;
+    }
   }
 `

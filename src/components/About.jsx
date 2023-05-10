@@ -21,7 +21,9 @@ const About = ({ headline, children, image }) => {
           >
             <FaFacebookSquare />
           </IconContext.Provider>
-          <Text>tildaengberg@hotmail.com</Text>
+          <Text to='mailto:tildaengberg@hotmail.com'>
+            tildaengberg@hotmail.com
+          </Text>
         </ContactFacebook>
         <ContactLinkedIn>
           <IconContext.Provider
@@ -29,7 +31,13 @@ const About = ({ headline, children, image }) => {
           >
             <FaLinkedin />
           </IconContext.Provider>
-          <Text>LinkedIn</Text>
+          <Text
+            textStyle='link'
+            link='https://www.linkedin.com/in/tildaengberg/'
+            target='_blank'
+          >
+            LinkedIn
+          </Text>
         </ContactLinkedIn>
       </TextWrapper>
     </Container>
@@ -43,8 +51,8 @@ const Container = styled.div`
   grid-template-columns: 1fr auto;
   gap: 10rem;
   align-items: center;
-  width: 80vw;
-  padding: ${GAP.l} 0 ${GAP.l} 0;
+  width: 70vw;
+  padding: ${GAP.l} 15vw ${GAP.l} 15vw;
   @media (max-width: 991px) {
     grid-template-columns: auto;
     gap: ${GAP.s};

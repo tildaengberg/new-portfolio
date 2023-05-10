@@ -57,36 +57,45 @@ export const FONT_SETTINGS = {
       large: '1.25rem',
       small: '1.25rem',
     },
+    textDecoration: 'none',
+  },
+  link: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: {
+      large: '1.125rem',
+      small: '0.875rem',
+    },
+    color: COLORS.grey,
+    textDecoration: 'underline',
   },
 }
 
-const Text = ({ textStyle = 'p', children, link = '' }) => {
+const Text = ({ textStyle = 'p', children, link = '', target = '_self' }) => {
   const fontSettings = FONT_SETTINGS[textStyle]
-
-  const Container = styled.div`
-    font-family: ${fontSettings.fontFamily};
-    font-size: ${fontSettings.fontSize.large};
-    color: ${fontSettings.color};
-
-    @media (max-width: 991px) {
-      font-size: ${fontSettings.fontSize.small};
-    }
-  `
-
   return (
     <>
       {link !== '' ? (
-        <StyledLink to={link}>
-          <Text textStyle='navbar'>{children}</Text>
+        <StyledLink to={link} target={target}>
+          <Container fontSettings={fontSettings}>{children}</Container>
         </StyledLink>
       ) : (
-        <Container>{children}</Container>
+        <Container fontSettings={fontSettings}>{children}</Container>
       )}
     </>
   )
 }
 
 export default Text
+
+const Container = styled.div`
+  font-family: ${(props) => props.fontSettings.fontFamily};
+  font-size: ${(props) => props.fontSettings.fontSize.large};
+  color: ${(props) => props.fontSettings.color};
+  text-decoration: ${(props) => props.fontSettings.textDecoration};
+  @media (max-width: 991px) {
+    font-size: ${(props) => props.fontSettings.fontSize.small};
+  }
+`
 
 const StyledLink = styled(Link)`
   text-decoration: none;

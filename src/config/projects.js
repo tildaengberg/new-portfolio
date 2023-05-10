@@ -14,6 +14,7 @@ import puzzle1 from '../assets/projects/Puzzle/puzzle1.png'
 
 import portfolio from '../assets/projects/Portfolio/portfolio.png'
 import portfoliohero from '../assets/projects/Portfolio/portfolio-hero.png'
+import portfolio1 from '../assets/projects/Portfolio/portfolio1.png'
 
 import weathermap from '../assets/projects/WeatherMap/weathermap.png'
 import weathermaphero from '../assets/projects/WeatherMap/weathermap-hero.png'
@@ -120,19 +121,15 @@ export const PROJECTS = [
     image: portfolio,
     description: 'Redesign of this portfolio',
     hero: portfoliohero,
-    information: 'information...',
+    information:
+      'Over time, I have made many changes to my portfolio, tweaking the design and adding new projects as my skills have grown. However, when I look back on my earlier work, I realize that I want to start over from scratch and prioritize code quality. I believe that the underlying code structure is the most important aspect of any code project, as it affects the sites performance, maintainability, and scalability.',
     tools: 'React | styled-components | Figma',
     duration: 'Continuously',
     role: 'Design | Development',
     firstBlock: {
-      headline: 'Process',
-      image: portfolio,
-      text: 'text',
-    },
-    secondBlock: {
-      headline: 'Result',
-      image: portfolio,
-      text: 'text',
+      headline: 'Streamlined Workflow',
+      image: portfolio1,
+      text: 'I wanted to give the portfolio a fresh, modern look. Therefore, I focused on creating a clean, minimalist design that puts the spotlight on my work. I also made sure to optimize the site for different screen sizes and devices, to ensure a consistent experience across all platforms. In addition to improving the code quality, I wanted to make the portfolio more efficient when it comes to updating projects. I implemented a streamlined workflow that allows me to quickly and easily add new projects or make changes to existing ones.',
     },
   },
   {
@@ -207,7 +204,7 @@ export const PROJECTS = [
     duration: 'May 2019 - August 2019',
     role: 'Design | Development',
     firstBlock: {
-      headline: 'Logotype & Flyer',
+      headline: 'Logotype and Flyer',
       image: garmaqua1,
       text: 'To get the feel of the company that supplies an invention to hospitals and large facilities, I started by creating a logo and graphic profile. This meant that it was easier to create a prototype for the website.',
     },

@@ -6,13 +6,15 @@ import Text from './components/Text'
 import { COLORS } from './config/colors'
 import styled from 'styled-components'
 import { GAP } from './config/gap'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar>
-          <Text textStyle='navbar' link='/'>
+          <Text textStyle='navbar' link='/' navbar='true'>
             Tilda Engberg
           </Text>
         </Navbar>

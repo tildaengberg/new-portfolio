@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
     justify-items: center;
-    padding-top: 5vh;
+    padding-top: ${GAP.xxs};
   }
 `
 const Intro = styled.div`

@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import { GAP } from '../../config/gap'
 
 const Project = ({ projectId }) => {
-  console.log(PROJECTS[projectId].secondBlock)
   return (
     <>
       <ProjectInfo
@@ -46,4 +45,6 @@ const InfoWrapper = styled(Box)`
   display: grid;
   gap: ${GAP.m};
   margin: ${GAP.xl} 0 ${GAP.xl} 0;
+  @media (max-width: 991px) {
+  }
 `

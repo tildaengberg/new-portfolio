@@ -2,8 +2,6 @@ import Text from './Text'
 import styled from 'styled-components'
 import { COLORS } from '../config/colors'
 
-// TODO: Link
-
 const Button = ({ children, active, onClick }) => {
   return (
     <Wrapper active={active} onClick={onClick}>
