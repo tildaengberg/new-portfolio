@@ -26,11 +26,11 @@ export default Text
 
 const Container = styled.div`
   font-family: ${(props) => props.fontSettings.fontFamily};
-  font-size: ${(props) => props.fontSettings.fontSize.large};
+  font-size: ${(props) => props.fontSettings.fontSize.small};
   color: ${(props) => props.fontSettings.color};
   text-decoration: ${(props) => props.fontSettings.textDecoration};
   @media (max-width: 991px) {
-    font-size: ${(props) => props.fontSettings.fontSize.small} !important;
+    font-size: ${(props) => props.fontSettings.fontSize.small};
   }
 `
 

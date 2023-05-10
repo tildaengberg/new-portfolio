@@ -54,6 +54,8 @@ const Container = styled.div`
   @media (max-width: 991px) {
     grid-template-columns: auto;
     gap: ${GAP.s};
+    width: 85vw;
+    padding: ${GAP.l} 7.5vw ${GAP.l} 7.5vw;
   }
 `
 

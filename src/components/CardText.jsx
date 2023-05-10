@@ -66,7 +66,7 @@ const TextWrapper = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   img {
