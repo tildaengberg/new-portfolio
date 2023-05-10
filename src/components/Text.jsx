@@ -26,7 +26,7 @@ export default Text
 
 const Container = styled.div`
   font-family: ${(props) => props.fontSettings.fontFamily};
-  font-size: ${(props) => props.fontSettings.fontSize.small};
+  font-size: ${(props) => props.fontSettings.fontSize.large};
   color: ${(props) => props.fontSettings.color};
   text-decoration: ${(props) => props.fontSettings.textDecoration};
   @media (max-width: 991px) {
