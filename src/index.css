@@ -1,13 +1,20 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'PowerrBold';
+  src: local('PowerrBold'),
+    url('./config/fonts/Powerr/PowerrBold-Rpz8M.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'PowerrMedium';
+  src: local('PowerrMedium'),
+    url('./config/fonts/Powerr/PowerrMedium-rgVwO.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'),
+    url('./config/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
