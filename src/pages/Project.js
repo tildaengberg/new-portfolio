@@ -45,6 +45,4 @@ const InfoWrapper = styled(Box)`
   display: grid;
   gap: ${GAP.m};
   margin: ${GAP.xl} 0 ${GAP.xl} 0;
-  @media (max-width: 991px) {
-  }
 `

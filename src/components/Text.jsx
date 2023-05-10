@@ -30,7 +30,7 @@ const Container = styled.div`
   color: ${(props) => props.fontSettings.color};
   text-decoration: ${(props) => props.fontSettings.textDecoration};
   @media (max-width: 991px) {
-    font-size: ${(props) => props.fontSettings.fontSize.small};
+    font-size: ${(props) => props.fontSettings.fontSize.small} !important;
   }
 `
 

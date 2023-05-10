@@ -188,7 +188,7 @@ export const PROJECTS = [
     firstBlock: {
       headline: 'Design',
       image: labels1,
-      text: 'Hejsan hoppsan',
+      text: 'I have experimented with various designs, occasionally playing around without committing to printing labels. While I do not make labels as frequently nowadays, I sometimes create designs when inspired. As previously stated, designing labels can be challenging due to the limited space available, and the best approach may be to keep it clean and simple.',
     },
   },
   {

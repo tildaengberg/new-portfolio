@@ -1,56 +1,46 @@
-import React, { useEffect, useState } from 'react'
 import Text from './Text'
 import styled from 'styled-components'
 import { GAP } from '../config/gap'
+import Responsive from 'react-responsive'
+
+const Mobile = (props) => <Responsive {...props} maxWidth={991} />
+const Desktop = (props) => <Responsive {...props} minWidth={992} />
 
 const CardText = ({ headline, children, imageSrc, flipped = false }) => {
-  const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-  })
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize, false)
-  }, [])
-
-  const handleResize = () => {
-    setDimensions({
-      width: window.innerWidth,
-    })
-  }
-
   return (
     <Wrapper>
-      {dimensions.width < 991 ? (
-        <>
-          <TextWrapper>
-            <Text textStyle='h2'>{headline}</Text>
-            <Text>{children}</Text>
-          </TextWrapper>
-          <ImageWrapper>
-            <img src={imageSrc} alt='Project' />
-          </ImageWrapper>
-        </>
-      ) : flipped ? (
-        <>
-          <TextWrapper>
-            <Text textStyle='h2'>{headline}</Text>
-            <Text>{children}</Text>
-          </TextWrapper>
-          <ImageWrapper>
-            <img src={imageSrc} alt='Project' />
-          </ImageWrapper>
-        </>
-      ) : (
-        <>
-          <ImageWrapper>
-            <img src={imageSrc} alt='Project' />
-          </ImageWrapper>
-          <TextWrapper>
-            <Text textStyle='h2'>{headline}</Text>
-            <Text>{children}</Text>
-          </TextWrapper>
-        </>
-      )}
+      <Desktop>
+        {flipped ? (
+          <>
+            <TextWrapper>
+              <Text textStyle='h2'>{headline}</Text>
+              <Text>{children}</Text>
+            </TextWrapper>
+            <ImageWrapper>
+              <img src={imageSrc} alt='Project' />
+            </ImageWrapper>
+          </>
+        ) : (
+          <>
+            <ImageWrapper>
+              <img src={imageSrc} alt='Project' />
+            </ImageWrapper>
+            <TextWrapper>
+              <Text textStyle='h2'>{headline}</Text>
+              <Text>{children}</Text>
+            </TextWrapper>
+          </>
+        )}
+      </Desktop>
+      <Mobile>
+        <TextWrapper>
+          <Text textStyle='h2'>{headline}</Text>
+          <Text>{children}</Text>
+        </TextWrapper>
+        <ImageWrapper>
+          <img src={imageSrc} alt='Project' />
+        </ImageWrapper>
+      </Mobile>
     </Wrapper>
   )
 }
