@@ -17,12 +17,12 @@ const SkillsSection = () => {
             frameworks.
           </Skill>
           <Skill headline='Backend' icon='database'>
-            Frontend is my biggest intrest and it is excitning to try out new
-            frameworks.
+            Backend development is an area that I have mostly tested and want to
+            expand my knowledge in.
           </Skill>
           <Skill headline='UX/UI' icon='pen'>
-            Frontend is my biggest intrest and it is excitning to try out new
-            frameworks.
+            I like to design everything from paper prototypes to finished HiFi
+            prototypes.
           </Skill>
         </Items>
       </SkillsContainer>
@@ -52,6 +52,7 @@ const Items = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: ${GAP.m};
+  align-items: start;
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
     gap: ${GAP.s};

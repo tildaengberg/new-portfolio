@@ -6,7 +6,7 @@ import About from '../../components/About'
 import SkillsSection from './SkillsSection'
 import { GAP } from '../../config/gap'
 import Hero from '../../components/Hero'
-import test from '../../assets/Me.jpg'
+import hero from '../../assets/hero.jpg'
 import { COLORS } from '../../config/colors'
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
     <Container>
       <Hero
         headline='Hi, I am Tilda, a student and future developer and this portfolio will show you...'
-        image={test}
+        image={hero}
       >
         ...what I can do with a keyboard and a cup of coffee ☕. Explore some of
         the projects I've been working on and see what I've been up to during my
@@ -28,7 +28,7 @@ const Home = () => {
           master's degree in Interaction and Design at Umeå University. I am
           currently in my fourth year of the program and continue to learn new
           things every day. I like both UX/UI design but am currently mostly
-          focused on developing my skills in programming. In my spare time I
+          focused on developing my skills in programming. When I'm not coding I
           like to be out in nature and exercise, with the time that is left I
           often have small side projects just for fun.
         </About>

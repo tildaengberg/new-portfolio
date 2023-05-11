@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Text from './Text'
 import { IconContext } from 'react-icons'
-import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { COLORS } from '../config/colors'
 import { GAP } from '../config/gap'
 
@@ -17,13 +17,13 @@ const About = ({ headline, children, image }) => {
           <IconContext.Provider
             value={{ color: `${COLORS.grey}`, size: '1.75rem' }}
           >
-            <FaFacebookSquare />
+            <FaEnvelope />
           </IconContext.Provider>
           <Text to='mailto:tildaengberg@hotmail.com'>
             tildaengberg@hotmail.com
           </Text>
         </ContactFacebook>
-        <ContactLinkedIn>
+        <ExternalLinks>
           <IconContext.Provider
             value={{ color: `${COLORS.grey}`, size: '1.75rem' }}
           >
@@ -36,7 +36,21 @@ const About = ({ headline, children, image }) => {
           >
             LinkedIn
           </Text>
-        </ContactLinkedIn>
+        </ExternalLinks>
+        <ExternalLinks>
+          <IconContext.Provider
+            value={{ color: `${COLORS.grey}`, size: '1.75rem' }}
+          >
+            <FaGithub />
+          </IconContext.Provider>
+          <Text
+            textStyle='link'
+            link='https://github.com/tildaengberg'
+            target='_blank'
+          >
+            GitHub
+          </Text>
+        </ExternalLinks>
       </TextWrapper>
     </Container>
   )
@@ -80,7 +94,7 @@ const ContactFacebook = styled.div`
   gap: ${GAP.xs};
 `
 
-const ContactLinkedIn = styled.div`
+const ExternalLinks = styled.div`
   display: grid;
   grid-auto-flow: column;
   gap: ${GAP.xs};

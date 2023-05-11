@@ -1,53 +1,53 @@
-import tabletalk from '../assets/projects/TableTalk/tabletalk.png'
-import tabletalkhero from '../assets/projects/TableTalk/tabletalk-hero.png'
-import tabletalk1 from '../assets/projects/TableTalk/tabletalk1.png'
-import tabletalk2 from '../assets/projects/TableTalk/tabletalk2.png'
+import tabletalk from '../assets/projects/TableTalk/tabletalk.jpg'
+import tabletalkhero from '../assets/projects/TableTalk/tabletalk-hero.jpg'
+import tabletalk1 from '../assets/projects/TableTalk/tabletalk1.jpg'
+import tabletalk2 from '../assets/projects/TableTalk/tabletalk2.jpg'
 
-import id from '../assets/projects/ID/id.png'
-import idhero from '../assets/projects/ID/id-hero.png'
-import id1 from '../assets/projects/ID/id1.png'
-import id2 from '../assets/projects/ID/id2.png'
+import id from '../assets/projects/ID/id.jpg'
+import idhero from '../assets/projects/ID/id-hero.jpg'
+import id1 from '../assets/projects/ID/id1.jpg'
+import id2 from '../assets/projects/ID/id2.jpg'
 
-import puzzle from '../assets/projects/Puzzle/puzzle.png'
-import puzzlehero from '../assets/projects/Puzzle/puzzle-hero.png'
-import puzzle1 from '../assets/projects/Puzzle/puzzle1.png'
+import puzzle from '../assets/projects/Puzzle/puzzle.jpg'
+import puzzlehero from '../assets/projects/Puzzle/puzzle-hero.jpg'
+import puzzle1 from '../assets/projects/Puzzle/puzzle1.jpg'
 
-import portfolio from '../assets/projects/Portfolio/portfolio.png'
-import portfoliohero from '../assets/projects/Portfolio/portfolio-hero.png'
-import portfolio1 from '../assets/projects/Portfolio/portfolio1.png'
+import portfolio from '../assets/projects/Portfolio/portfolio.jpg'
+import portfoliohero from '../assets/projects/Portfolio/portfolio-hero.jpg'
+import portfolio1 from '../assets/projects/Portfolio/portfolio1.jpg'
 
-import weathermap from '../assets/projects/WeatherMap/weathermap.png'
-import weathermaphero from '../assets/projects/WeatherMap/weathermap-hero.png'
-import weathermap1 from '../assets/projects/WeatherMap/weathermap1.png'
+import weathermap from '../assets/projects/WeatherMap/weathermap.jpg'
+import weathermaphero from '../assets/projects/WeatherMap/weathermap-hero.jpg'
+import weathermap1 from '../assets/projects/WeatherMap/weathermap1.jpg'
 
-import shysstkak from '../assets/projects/SchysstKak/shysstkak.png'
-import shysstkakhero from '../assets/projects/SchysstKak/shysstkak-hero.png'
-import shysstkak1 from '../assets/projects/SchysstKak/shysstkak1.png'
-import shysstkak2 from '../assets/projects/SchysstKak/shysstkak2.png'
+import shysstkak from '../assets/projects/SchysstKak/shysstkak.jpg'
+import shysstkakhero from '../assets/projects/SchysstKak/shysstkak-hero.jpg'
+import shysstkak1 from '../assets/projects/SchysstKak/shysstkak1.jpg'
+import shysstkak2 from '../assets/projects/SchysstKak/shysstkak2.jpg'
 
-import labels from '../assets/projects/Beer/labels.png'
-import labelshero from '../assets/projects/Beer/labels-hero.png'
-import labels1 from '../assets/projects/Beer/labels1.png'
+import labels from '../assets/projects/Beer/labels.jpg'
+import labelshero from '../assets/projects/Beer/labels-hero.jpg'
+import labels1 from '../assets/projects/Beer/labels1.jpg'
 
-import garmaqua from '../assets/projects/GarmAqua/garmaqua.png'
-import garmaquahero from '../assets/projects/GarmAqua/garmaqua-hero.png'
-import garmaqua1 from '../assets/projects/GarmAqua/garmaqua1.png'
-import garmaqua2 from '../assets/projects/GarmAqua/garmaqua2.png'
+import garmaqua from '../assets/projects/GarmAqua/garmaqua.jpg'
+import garmaquahero from '../assets/projects/GarmAqua/garmaqua-hero.jpg'
+import garmaqua1 from '../assets/projects/GarmAqua/garmaqua1.jpg'
+import garmaqua2 from '../assets/projects/GarmAqua/garmaqua2.jpg'
 
-import solwe from '../assets/projects/Solwe/solwe.png'
-import solwehero from '../assets/projects/Solwe/solwe-hero.png'
-import solwe1 from '../assets/projects/Solwe/solwe1.png'
-import solwe2 from '../assets/projects/Solwe/solwe2.png'
+import solwe from '../assets/projects/Solwe/solwe.jpg'
+import solwehero from '../assets/projects/Solwe/solwe-hero.jpg'
+import solwe1 from '../assets/projects/Solwe/solwe1.jpg'
+import solwe2 from '../assets/projects/Solwe/solwe2.jpg'
 
-import goodtech from '../assets/projects/goodtech/goodtech.png'
-import goodtechhero from '../assets/projects/goodtech/goodtech-hero.png'
-import goodtech1 from '../assets/projects/goodtech/goodtech1.png'
-import goodtech2 from '../assets/projects/goodtech/goodtech2.png'
+import goodtech from '../assets/projects/goodtech/goodtech.jpg'
+import goodtechhero from '../assets/projects/goodtech/goodtech-hero.jpg'
+import goodtech1 from '../assets/projects/goodtech/goodtech1.jpg'
+import goodtech2 from '../assets/projects/goodtech/goodtech2.jpg'
 
-import nasa from '../assets/projects/YesWeHearYou/nasa.png'
-import nasahero from '../assets/projects/YesWeHearYou/nasa-hero.png'
-import nasa1 from '../assets/projects/YesWeHearYou/nasa1.png'
-import nasa2 from '../assets/projects/YesWeHearYou/nasa2.png'
+import nasa from '../assets/projects/YesWeHearYou/nasa.jpg'
+import nasahero from '../assets/projects/YesWeHearYou/nasa-hero.jpg'
+import nasa1 from '../assets/projects/YesWeHearYou/nasa1.jpg'
+import nasa2 from '../assets/projects/YesWeHearYou/nasa2.jpg'
 
 export const PROJECTS = [
   {
@@ -119,7 +119,7 @@ export const PROJECTS = [
     headline: 'This portfolio',
     path: '/portfolio',
     image: portfolio,
-    description: 'Redesign of this portfolio',
+    description: 'Redesign of this portfolio.',
     hero: portfoliohero,
     information:
       'Over time, I have made many changes to my portfolio, tweaking the design and adding new projects as my skills have grown. However, when I look back on my earlier work, I realize that I want to start over from scratch and prioritize code quality. I believe that the underlying code structure is the most important aspect of any code project, as it affects the sites performance, maintainability, and scalability.',
@@ -155,7 +155,7 @@ export const PROJECTS = [
     headline: 'Cook together',
     path: '/cook-togheter',
     image: shysstkak,
-    description: 'Learn more about each other.',
+    description: 'A collabration with the company Schysst käk during a course.',
     information:
       'A project together with Schysst käk was carried out in connection with the course Product development in media technology using the "Design-Build-Test" method. The aim of the project was to increase knowledge about the concept of home makebab as a meal solution in everyday life. The goal of the project was to create a modern recipe application that is simple and fun.',
     tools: 'Figma',
@@ -178,7 +178,8 @@ export const PROJECTS = [
     headline: 'Beer labels',
     path: '/beer-labels',
     image: labels,
-    description: 'New website for my program. ',
+    description:
+      'Fun side project to design beer labels for both bottle and can.',
     hero: labelshero,
     information:
       'In my spare time when there is time to spare, I design beer labels for Munksunds Craftbeer as a fun side project. Although it is mostly a fun thing, it has been as challenging and educational as other jobs. The biggest challenge is that it is a limited and small space where a lot of information has to fit. The labels I have made fit both cans and bottles.',
@@ -219,7 +220,8 @@ export const PROJECTS = [
     headline: 'NASA Hackathon Global nominee',
     path: '/solwe',
     image: solwe,
-    description: 'Learn more about each other.',
+    description:
+      'Participated in NASA hackathon to prototype solar cell user solution.',
     hero: solwehero,
     information:
       'Me and my friends, also classmates participated in the NASA Space Apps Challenge which is a global hackathon that lasts for 48 hours where a challenge has to be solved.',
@@ -242,7 +244,8 @@ export const PROJECTS = [
     headline: 'Winner of Good Tech Hack',
     path: '/goodtechhack',
     image: goodtech,
-    description: 'New website for my program. ',
+    description:
+      'Participated in Good Tech Hack to solve social inclusion in school.',
     hero: goodtechhero,
     information:
       'Me and my friends, also classmates participated in Good Tech Hack which is a hackathon that lasts for 24 hours where a challenge has to be solved. Students, the public sector and companies could participate in the competition.',
@@ -265,7 +268,8 @@ export const PROJECTS = [
     headline: 'NASA Hackathon Global award',
     path: '/nasa-hackathon',
     image: nasa,
-    description: 'My first real website and project.',
+    description:
+      'Participated in NASA hackathon for prototyping a user solution for communication with Mars.',
     hero: nasahero,
     information:
       'Me and three people from Finland and Sweden participated in NASAs Hackathon Space Apps Challenge held in Vaasa. The hackathon lasts for 48 hours and was remote because of the pandemic.',

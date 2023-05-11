@@ -64,8 +64,9 @@ const Cards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, min-content);
   gap: ${GAP.m};
+  align-items: start;
   @media (max-width: 991px) {
     grid-template-columns: repeat(2, min-content);
-    gap: ${GAP.xs};
+    gap: ${GAP.s} ${GAP.xs};
   }
 `
