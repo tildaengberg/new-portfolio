@@ -13,12 +13,12 @@ const SkillsSection = () => {
         <Text textStyle='h2'>My main skills</Text>
         <Items>
           <Skill headline='Frontend' icon='code'>
-            Frontend is my biggest intrest and it is excitning to try out new
+            Frontend is my biggest interest, and it is exciting to explore new
             frameworks.
           </Skill>
           <Skill headline='Backend' icon='database'>
-            Backend development is an area that I have mostly tested and want to
-            expand my knowledge in.
+            Backend development is an area that I have mostly explored and want
+            to expand my knowledge in.
           </Skill>
           <Skill headline='UX/UI' icon='pen'>
             I like to design everything from paper prototypes to finished HiFi

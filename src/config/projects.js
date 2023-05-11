@@ -65,12 +65,12 @@ export const PROJECTS = [
     firstBlock: {
       headline: 'Prototype',
       image: tabletalk1,
-      text: 'The project began individually with all group members creating their own LoFi prototypes based on a common project idea. Everyone in the group did different user tests and then we discussed in the group together which functions should be kept. The next step in the process was to create a MidFi prototype together where we first created flowcharts and mood boards to convey the feeling we wanted to create through the application. Before the development of the application, a component library was created in Figma to be able to easily develop these.',
+      text: 'The project began with each group member individually creating their own LoFi prototypes based on a common project idea. Afterward, everyone in the group conducted different user tests, and together, we discussed which functions should be kept. The next step was to create a MidFi prototype together. We started by creating flowcharts and mood boards to convey the feeling we wanted to create through the application. Before the application development, we created a component library in Figma to facilitate easy development of these components.',
     },
     secondBlock: {
       headline: 'Development',
       image: tabletalk2,
-      text: 'After the MidFi prototype was ready, development of the application could start. The development in the frontend took place through React Native, Expo and XCode Simulator, the backend part was developed in Node.js and Express and used socket.io to be able to create the different game rooms. The result was a working application where players can connect and join different rooms. A requirement that we had as a priority was that the game should be synchronized between the different phones and with the help of sockets we fulfilled the requirement.',
+      text: 'The development of the application began after the completion of the MidFi prototype. The frontend was developed using React Native, Expo, and XCode Simulator, while the backend was developed using Node.js and Express, with socket.io used to create different game rooms. The final product was a fully functional application that allowed players to connect and join different game rooms. A key requirement was that the game should be synchronized across all phones, which was achieved with the help of socket technology.',
     },
   },
   {
@@ -93,7 +93,7 @@ export const PROJECTS = [
     secondBlock: {
       headline: 'Development',
       image: id2,
-      text: 'When the prototype in Figma was ready, development could begin. Since the service as amanuens is only at 10%, the page needed to be easily built up. With the help of Taildwind together with daysiUI, it was very fast to create components in React.',
+      text: 'When the Figma prototype was ready, development could begin. Since the service as an amanuens was only at 10%, the website needed to be easily built up. With the help of Tailwind CSS and daysiUI, it was very fast to create components in React.',
     },
   },
   {
@@ -140,14 +140,14 @@ export const PROJECTS = [
     description: 'Combine two API is fun!',
     hero: weathermaphero,
     information:
-      'In this project I worked together with a classmate. We developed a website that can show weather history for different places in the world during a selected month.',
+      'The project was a collaboration between me and a classmate, and our goal was to develop a website that could display weather history for various locations around the world during a specific month.',
     tools: 'React | MapBox | NASA API',
     duration: 'Mars 2022 - June 2022',
     role: 'Development',
     firstBlock: {
       headline: 'Development',
       image: weathermap1,
-      text: 'In order to display weather data, NASAs API was used which could retrieve the average temperature for a selected year and month. To be able to manage location selection, MapBox was used, which is a map API. Based on the selected location, these coordinates were sent as input parameters to NASAs API. Through this data, the user could set a map pin and select a date to get the average temperature.',
+      text: 'In order to display weather data, NASAs API was used which could retrieve the average temperature for a selected year and month. To enable the selection of locations, we used MapBox, which is a map API. Users could set a map pin on the location of their choice and select a specific month. The coordinates of the pin were then passed as input parameters to NASAs API to retrieve the average temperature data for that location and month.',
     },
   },
   {
@@ -157,7 +157,7 @@ export const PROJECTS = [
     image: shysstkak,
     description: 'A collabration with the company Schysst käk during a course.',
     information:
-      'A project together with Schysst käk was carried out in connection with the course Product development in media technology using the "Design-Build-Test" method. The aim of the project was to increase knowledge about the concept of home makebab as a meal solution in everyday life. The goal of the project was to create a modern recipe application that is simple and fun.',
+      'As part of the Product Development in Media Technology course, our group worked on a project with Schysst Käk using the "Design-Build-Test" method. The project aimed to increase awareness about the concept of home-cooked meals as a solution for everyday life. Our goal was to develop a modern recipe application that was user-friendly and enjoyable to use.',
     tools: 'Figma',
     duration: 'January 2022 - June 2022',
     hero: shysstkakhero,
@@ -236,7 +236,7 @@ export const PROJECTS = [
     secondBlock: {
       headline: 'Result',
       image: solwe2,
-      text: 'Through data from NASA and the created prototypes, the solution was named "Solwe" where the user can easily get an overview of their production and consumption from their solar cells. The solution helps solar cell users to more easily understand and compare their data from the solar cells. The result that was presented won the regional competition in Sweden, but the solution did not make it further into the global competition.',
+      text: 'You are my sunshine. We developed a solution called "Solwe" that utilized data from NASA and incorporated our LoFi and HiFi prototypes to create an easy-to-use interface that enables solar cell users to get an overview of their production and consumption. Our solution won the regional competition in Sweden, but did not progress to the global competition.',
     },
   },
   {
@@ -255,7 +255,7 @@ export const PROJECTS = [
     firstBlock: {
       headline: 'Challange',
       image: goodtech1,
-      text: 'This years theme at Good Tech Hack was sustainable cities and communities, which is the UNs global sustainability goal number 11. We chose the question: Social inclusion - How can we contribute to increasing social inclusion for pupils and students so they can cope better at school? The limited time meant that we did not have time to carry out a full design process, but we brainstormed and quickly sketched out a platform based on our idea Coetus.',
+      text: 'This years theme at Good Tech Hack was sustainable cities and communities, centered around the UNs global sustainability goal number 11. Our team chose to tackle the question of social inclusion - how we could contribute to helping pupils and students better cope with school. Due to the limited time, we were not able to carry out a full design process, but we brainstormed and sketched out a platform based on our idea, Coetus.',
     },
     secondBlock: {
       headline: 'Result',
@@ -279,7 +279,7 @@ export const PROJECTS = [
     firstBlock: {
       headline: 'Challenge and process',
       image: nasa1,
-      text: 'We chose the challenge "Can you hear me now?" who had the goal of creating a user-friendly application that demonstrates the difficulties of communication to Mars. We started with brainstorming to be able to show in a simple way how difficult it really is to send a message to Mars. When we had an idea, we started sketching prototypes of what the solution could look like. Then we worked in parallel with programming the website and the design, and that some calculations needed to be done.',
+      text: 'We chose the challenge "Can you hear me now?" which had the goal of creating a user-friendly application that demonstrates the difficulties of communication to Mars. We started with brainstorming to be able to show in a simple way how difficult it really is to send a message to Mars. When we had an idea, we started sketching prototypes of what the solution could look like. Then we worked in parallel with programming the website and designing it, while also performing some necessary calculations.',
     },
     secondBlock: {
       headline: 'Result',
