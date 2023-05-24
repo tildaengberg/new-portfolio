@@ -3,8 +3,8 @@ import Text from './Text'
 import styled from 'styled-components'
 import XsInfo from './XsInfo'
 import { GAP } from '../config/gap'
-import Box from '../config/Box'
 import { COLORS } from '../config/colors'
+import Box from '../helpers/Box'
 
 const ProjectInfo = ({ headline, children, tools, duration, role, img }) => {
   return (

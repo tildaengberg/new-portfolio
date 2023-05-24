@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Text from './Text'
 import Button from './Button'
 import { GAP } from '../config/gap'
-import Box from '../config/Box'
+import Box from '../helpers/Box'
 import { COLORS } from '../config/colors'
 import { Link } from 'react-scroll'
 

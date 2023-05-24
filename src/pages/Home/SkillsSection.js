@@ -2,7 +2,7 @@ import React from 'react'
 import Text from '../../components/Text'
 import Skill from '../../components/Skill'
 import styled from 'styled-components'
-import Box from '../../config/Box'
+import Box from '../../helpers/Box'
 import { GAP } from '../../config/gap'
 
 const SkillsSection = () => {

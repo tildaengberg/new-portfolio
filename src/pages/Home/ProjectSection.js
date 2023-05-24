@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Text from '../../components/Text'
 import Card from '../../components/Card'
 import { GAP } from '../../config/gap'
 import ButtonGroup from '../../components/ButtonGroup'
 import { PROJECTS } from '../../config/projects'
+import { useHistoryWithStorage } from '../../helpers/HistoryHelper'
 
 const ProjectSection = () => {
-  const [activeButtonIndex, setActiveButtonIndex] = useState(0)
+  const { activeButtonIndex, storeActiveButtonIndex } = useHistoryWithStorage()
 
   const handleButtonClick = (index) => {
-    setActiveButtonIndex(index)
+    storeActiveButtonIndex(index)
   }
+
   return (
     <ProjectWrapper>
       <Text textStyle='h2'>My work</Text>
@@ -23,7 +25,12 @@ const ProjectSection = () => {
       <Cards>
         {activeButtonIndex === 0 &&
           PROJECTS.filter((card) => card.tag === 'code').map((card, index) => (
-            <Card headline={card.headline} image={card.image} path={card.path}>
+            <Card
+              key={index}
+              headline={card.headline}
+              image={card.image}
+              path={card.path}
+            >
               {card.description}
             </Card>
           ))}
@@ -31,6 +38,7 @@ const ProjectSection = () => {
           PROJECTS.filter((card) => card.tag === 'design').map(
             (card, index) => (
               <Card
+                key={index}
                 headline={card.headline}
                 image={card.image}
                 path={card.path}
@@ -41,7 +49,12 @@ const ProjectSection = () => {
           )}
         {activeButtonIndex === 2 &&
           PROJECTS.filter((card) => card.tag === 'award').map((card, index) => (
-            <Card headline={card.headline} image={card.image} path={card.path}>
+            <Card
+              key={index}
+              headline={card.headline}
+              image={card.image}
+              path={card.path}
+            >
               {card.description}
             </Card>
           ))}

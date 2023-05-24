@@ -5,7 +5,7 @@ import Text from './components/Text'
 import { COLORS } from './config/colors'
 import styled from 'styled-components'
 import { GAP } from './config/gap'
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './helpers/ScrollToTop'
 
 function App() {
   return (

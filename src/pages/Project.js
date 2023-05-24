@@ -2,9 +2,9 @@ import React from 'react'
 import { PROJECTS } from '../config/projects'
 import ProjectInfo from '../components/ProjectInfo'
 import CardText from '../components/CardText'
-import Box from '../config/Box'
 import styled from 'styled-components'
 import { GAP } from '../config/gap'
+import Box from '../helpers/Box'
 
 const Project = ({ projectId }) => {
   return (
