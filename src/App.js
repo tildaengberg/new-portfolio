@@ -39,9 +39,10 @@ function App() {
             element={<Project projectId={6} />}
           />
           <Route exact path='/garmaqua' element={<Project projectId={7} />} />
-          <Route exact path='/solwe' element={<Project projectId={8} />} />
-          <Route path='/goodtechhack' element={<Project projectId={9} />} />
-          <Route path='/nasa-hackathon' element={<Project projectId={10} />} />
+          <Route exact path='/student-of-the-year' element={<Project projectId={8}/>}/>
+          <Route exact path='/solwe' element={<Project projectId={9} />} />
+          <Route path='/goodtechhack' element={<Project projectId={10} />} />
+          <Route path='/nasa-hackathon' element={<Project projectId={11} />} />
         </Routes>
       </Router>
     </>

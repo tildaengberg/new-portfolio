@@ -34,6 +34,10 @@ import garmaquahero from '../assets/projects/GarmAqua/garmaqua-hero.jpg'
 import garmaqua1 from '../assets/projects/GarmAqua/garmaqua1.jpg'
 import garmaqua2 from '../assets/projects/GarmAqua/garmaqua2.jpg'
 
+import studentofyear from '../assets/projects/StudentOfYear/studentofyear.jpg'
+import studentofyearhero from '../assets/projects/StudentOfYear/studentofyearhero.jpg'
+import studentofyear1 from '../assets/projects/StudentOfYear/studentofyear1.jpg'
+
 import solwe from '../assets/projects/Solwe/solwe.jpg'
 import solwehero from '../assets/projects/Solwe/solwe-hero.jpg'
 import solwe1 from '../assets/projects/Solwe/solwe1.jpg'
@@ -214,6 +218,20 @@ export const PROJECTS = [
       image: garmaqua2,
       text: 'After the graphics and the prototype were completed, development could begin. Since React was completely new to me, development took longer than expected. I am personally very happy with the end result because I learned a lot along the way. However, in retrospect, I see that the result is not perfect in my opinion. But for being my first independent project, the result is okay.',
     },
+  },
+  {
+    tag: 'award',
+    headline: 'Student of the year',
+    path: '/student-of-the-year',
+    image: studentofyear,
+    description: 'Every year one student at my program gets an award',
+    hero: studentofyearhero,
+    information: 'I am proud to have been honored with the Student of the Year award in my program (Interaction and Design). This award is given annually to a student in the graduating class. Every student at the program has their own vote and could also write a motivation for the vote.',
+    firstBlock: {
+      headline: 'Years to remember',
+      image: studentofyear1,
+      text: 'My time in this program has had its highs and lows, but it is undeniably been the best years of my life. I have been actively involved in various areas, from Computer Science section to the Party Committee, Quality Assistance, and Hackathons. At the end of the day, what truly matters most to me is the opportunity of getting to know and forming bonds with fantastic friends, students, and teachers.'
+    }
   },
   {
     tag: 'award',

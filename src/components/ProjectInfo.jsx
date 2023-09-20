@@ -16,11 +16,13 @@ const ProjectInfo = ({ headline, children, tools, duration, role, img }) => {
               <Text textStyle='h1'>{headline}</Text>
               <Text>{children}</Text>
             </Intro>
+            {(tools || duration || role) && (
             <Info>
-              <XsInfo headline='Tools'>{tools}</XsInfo>
-              <XsInfo headline='Duration'>{duration}</XsInfo>
+                <XsInfo headline='Tools'>{tools}</XsInfo>
+                <XsInfo headline='Duration'>{duration}</XsInfo>
               <XsInfo headline='Role / Area'>{role}</XsInfo>
             </Info>
+            )}
           </TextWrapper>
           <ImageWrapper src={img} />
         </Wrapper>

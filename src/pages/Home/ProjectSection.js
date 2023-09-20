@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Text from '../../components/Text'
 import Card from '../../components/Card'
@@ -13,6 +13,13 @@ const ProjectSection = () => {
   const handleButtonClick = (index) => {
     storeActiveButtonIndex(index)
   }
+
+  useEffect(() => {
+    PROJECTS.forEach((project) => {
+      const img = new Image();
+      img.src = project.image;
+    });
+  }, []);
 
   return (
     <ProjectWrapper>
