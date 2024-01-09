@@ -6,7 +6,7 @@ import { GAP } from '../config/gap'
 import { COLORS } from '../config/colors'
 import Box from '../helpers/Box'
 
-const ProjectInfo = ({ headline, children, tools, duration, role, img }) => {
+const ProjectInfo = ({ headline, children, tools, duration, role, img, link }) => {
   return (
     <Container>
       <Box>
@@ -16,12 +16,19 @@ const ProjectInfo = ({ headline, children, tools, duration, role, img }) => {
               <Text textStyle='h1'>{headline}</Text>
               <Text>{children}</Text>
             </Intro>
-            {(tools || duration || role) && (
-            <Info>
-                <XsInfo headline='Tools'>{tools}</XsInfo>
-                <XsInfo headline='Duration'>{duration}</XsInfo>
-              <XsInfo headline='Role / Area'>{role}</XsInfo>
-            </Info>
+            {(tools || duration || role || link) && (
+              <Info>
+                {tools && (<XsInfo headline='Tools'>{tools}</XsInfo>)}
+                {duration && (<XsInfo headline='Duration'>{duration}</XsInfo>)}
+                {role && (<XsInfo headline='Role / Area'>{role}</XsInfo>)}
+                {link && (
+                  <HorizontalWrapper>
+                    <Text textStyle='h4'>Link: </Text>
+                    <Text headline='Link' textStyle='link' target='_blank' link={link}>Haunted Keyhunt playable</Text>
+                  </HorizontalWrapper>
+                )
+                }
+              </Info>
             )}
           </TextWrapper>
           <ImageWrapper src={img} />
@@ -75,4 +82,12 @@ const ImageWrapper = styled.img`
     grid-area: auto;
     max-width: 85vw;
   }
+`
+
+const HorizontalWrapper = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: baseline;
+  gap: ${GAP.xxs};
 `

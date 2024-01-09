@@ -1,3 +1,8 @@
+import hauntedkeyhunt from '../assets/projects/HauntedKeyhunt/hauntedkeyhunt.jpg'
+import hauntedkeyhunthero from '../assets/projects/HauntedKeyhunt/hauntedkeyhunt-hero.jpg'
+import hauntedkeyhunt1 from '../assets/projects/HauntedKeyhunt/hauntedkeyhunt1.jpg'
+import hauntedkeyhunt2 from '../assets/projects/HauntedKeyhunt/hauntedkeyhunt2.jpg'
+
 import tabletalk from '../assets/projects/TableTalk/tabletalk.jpg'
 import tabletalkhero from '../assets/projects/TableTalk/tabletalk-hero.jpg'
 import tabletalk1 from '../assets/projects/TableTalk/tabletalk1.jpg'
@@ -55,6 +60,29 @@ import nasa2 from '../assets/projects/YesWeHearYou/nasa2.jpg'
 
 export const PROJECTS = [
   {
+    tag: 'code',
+    headline: 'Haunted Keyhunt',
+    path: '/hauntedkeyhunt',
+    image: hauntedkeyhunt,
+    description: 'AI/ML game in Unity',
+    hero: hauntedkeyhunthero,
+    link: 'https://meek-haupia-ec2616.netlify.app/webgl/',
+    information:
+      'During my exchange studies in Barcelona I took a course where we developed a AI/ML game in Unity. We created a game where the player has to navigate and survive a dungeon filled with AI-powered enemies in order to find and open the exit door.',
+    tools: 'Unity | C# | WebGL | Unity ML-toolkit | Figma',
+    duration: 'September 2023 - January 2024',
+    role: 'Development | Build & publishing',
+    firstBlock: {
+      headline: 'Machine Learning Agents',
+      image: hauntedkeyhunt1,
+      text: 'The games AI, developed using Unity ML-Agents, incorporates reinforcement learning. Positive reinforcement rewards agents for successful actions such as accurate shooting and eliminating opponents. Negative reinforcement imposes penalties for inefficiency, missed shots, damage received, and collisions with obstacles. Continuous rewards in the form of small penalties for inaction encourage agents to explore and take actions to achieve the goal of eliminating targets.',
+    },
+    secondBlock: {
+      headline: 'Game plot',
+      image: hauntedkeyhunt2,
+      text: 'In the game, the player begins in a ghost-filled dungeon and must locate three keys to unlock the exit door. Ghost enemies with long-range attacks pose a threat, and the player, armed with a limited-ammunition gun, must explore to find both keys and ammo. Starting with 100 health points, the player needs to reach the exit door before running out of health, losing 25 points with each enemy hit.',
+    },
+  }, {
     tag: 'code',
     headline: 'TableTalk',
     path: '/tabletalk',

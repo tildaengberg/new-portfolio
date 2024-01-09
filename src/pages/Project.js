@@ -15,6 +15,7 @@ const Project = ({ projectId }) => {
         tools={PROJECTS[projectId].tools}
         duration={PROJECTS[projectId].duration}
         role={PROJECTS[projectId].role}
+        link={PROJECTS[projectId]?.link}
       >
         {PROJECTS[projectId].information}
       </ProjectInfo>
