@@ -18,7 +18,7 @@ export const FONT_SETTINGS = {
   h3: {
     fontFamily: 'PowerrMedium',
     fontSize: {
-      large: '1.5rem',
+      large: '1.125rem',
       small: '1.125rem',
     },
   },
@@ -32,7 +32,7 @@ export const FONT_SETTINGS = {
   p: {
     fontFamily: 'Poppins-Regular',
     fontSize: {
-      large: '1.125rem',
+      large: '1rem',
       small: '0.875rem',
     },
     color: COLORS.grey,
@@ -56,7 +56,7 @@ export const FONT_SETTINGS = {
   link: {
     fontFamily: 'Poppins-Regular',
     fontSize: {
-      large: '1.125rem',
+      large: '1rem',
       small: '0.875rem',
     },
     color: COLORS.grey,
