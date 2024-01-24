@@ -9,61 +9,50 @@ const SkillsSection = () => {
   const lineBreak = <br />
   return (
     <Container>
-      <SkillsContainer>
-        <Text textStyle='h2'>My main skills</Text>
-        <Items>
-          <Skill headline='Frontend' icon='code'>
-            Frontend is my biggest interest, and it is exciting to explore new
-            frameworks.
-          </Skill>
-          <Skill headline='Backend' icon='database'>
-            Backend development is an area that I have mostly explored and want
-            to expand my knowledge in.
-          </Skill>
-          <Skill headline='UX/UI' icon='pen'>
-            I like to design everything from paper prototypes to finished HiFi
-            prototypes.
-          </Skill>
-        </Items>
-      </SkillsContainer>
-      <InfoBlock>
-        <Text>Talk more?</Text>
-        <Text>Contact me: {lineBreak}tildaengberg@hotmail.com</Text>
-      </InfoBlock>
+      <Text textStyle='h2'>Education</Text>
+      <HorizontalGrid>
+        <Wrapper>
+          <div>
+            <Text textStyle='h3'>M. sc. Interaction and design</Text>
+            <Text>Umeå University | 2019 - 2024</Text>
+          </div>
+          <Text>During the years at the program I have gained experience in both UI/UX design and programming. But after I while I relasied that programming is my passion. The last two years at the education I decided to almost only focus on programming. </Text>
+        </Wrapper>
+        <Wrapper>
+          <div>
+            <Text textStyle='h3'>AI, Informatics, Reasearch and Innovation</Text>
+            <Text>Universitat Politècnica de Catalunya  | 2023</Text>
+          </div>
+          <Text>In my fith year during the atumn I studied abroad in Barcelona. I took courses in their AI master program and gained much experience in that area. But besides the studies I met new friends, learned new cultures and had a lot of tapas. Both fun and challanging experience!</Text>
+        </Wrapper>
+      </HorizontalGrid>
     </Container>
   )
 }
 
 export default SkillsSection
 
-const Container = styled.div`
+const Container = styled(Box)`
   display: grid;
-  gap: ${GAP.xl};
-`
-
-const SkillsContainer = styled(Box)`
-  display: grid;
-  justify-content: center;
-  justify-items: center;
   gap: ${GAP.m};
-`
-
-const Items = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: ${GAP.m};
-  align-items: start;
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
     gap: ${GAP.s};
   }
 `
 
-const InfoBlock = styled.div`
+const Wrapper = styled.div`
   display: grid;
-  justify-content: center;
-  justify-items: center;
-  grid-gap: ${GAP.s};
-  text-align: center;
-  padding-top: ${GAP.m};
+  gap: ${GAP.xs};
+`
+
+const HorizontalGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  gap: ${GAP.m};
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: ${GAP.s};
+  }
 `

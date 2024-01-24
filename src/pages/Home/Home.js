@@ -27,9 +27,6 @@ const Home = () => {
           I am a 23-year-old student from Piteå who is currently studying for a
           master's degree in Interaction and Design at Umeå University. I'm currently in my fifth and last year of the program, 
           approaching the end of my studies.
-          I enjoy both UX/UI design, but at the moment, I am primarily focused on developing my skills in programming. 
-          When I'm not coding, I like to spend time outdoors and exercise, and with the
-          remaining time, I often work on small side projects for fun.
         </About>
       </AboutWrapper>
       <SkillsSection />
