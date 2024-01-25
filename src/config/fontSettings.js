@@ -16,14 +16,14 @@ export const FONT_SETTINGS = {
     },
   },
   h3: {
-    fontFamily: 'PowerrMedium',
+    fontFamily: 'PowerrBold',
     fontSize: {
       large: '1.125rem',
-      small: '1.125rem',
+      small: '1rem',
     },
   },
   h4: {
-    fontFamily: 'PowerrBold',
+    fontFamily: 'PowerrMedium',
     fontSize: {
       large: '1.125rem',
       small: '1rem',
