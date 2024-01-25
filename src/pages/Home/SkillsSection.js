@@ -1,35 +1,35 @@
 import React from 'react'
 import Text from '../../components/Text'
-import Skill from '../../components/Skill'
 import styled from 'styled-components'
-import Box from '../../helpers/Box'
 import { GAP } from '../../config/gap'
 
 const SkillsSection = () => {
-  const lineBreak = <br />
   return (
-    <Container>
-      <SkillsContainer>
-        <Text textStyle='h2'>My main skills</Text>
-        <Items>
-          <Skill headline='Frontend' icon='code'>
-            Frontend is my biggest interest, and it is exciting to explore new
-            frameworks.
-          </Skill>
-          <Skill headline='Backend' icon='database'>
-            Backend development is an area that I have mostly explored and want
-            to expand my knowledge in.
-          </Skill>
-          <Skill headline='UX/UI' icon='pen'>
-            I like to design everything from paper prototypes to finished HiFi
-            prototypes.
-          </Skill>
-        </Items>
-      </SkillsContainer>
-      <InfoBlock>
-        <Text>Talk more?</Text>
-        <Text>Contact me: {lineBreak}tildaengberg@hotmail.com</Text>
-      </InfoBlock>
+      <Container>
+      <HorizontalGrid>
+        <Text textStyle='h3'>Education</Text>
+        <Wrapper>
+          <Text textStyle='h4'>Umea University</Text>
+          <Text>2019 - 2024</Text>
+          <Text>M.Sc. Programme in Interaction Technology and Design</Text>
+        </Wrapper>
+        <Wrapper>
+          <Text textStyle='h4'>Universitat Politecnica de Catalunya</Text>
+          <Text>2023</Text>
+          <Text>Exchange semester in Spain, Barcelona. Institution of Artificial Intelligence.</Text>
+        </Wrapper>
+      </HorizontalGrid>
+      <HorizontalGrid>
+        <Text textStyle='h3'>Tools</Text>
+          <Wrapper>
+            <Text textStyle='h4'>Frontend</Text>
+            <Text>HTML/CSS | JavaScript | React.js | TypeScript | Cypress.io | Tailwind | styled-components</Text>
+          </Wrapper>
+          <Wrapper>
+            <Text textStyle='h4'>Backend</Text>
+            <Text>Java | C# | SQL | MongoDB | Express | Node.js | GraphQL</Text>
+          </Wrapper>
+      </HorizontalGrid>
     </Container>
   )
 }
@@ -38,32 +38,31 @@ export default SkillsSection
 
 const Container = styled.div`
   display: grid;
-  gap: ${GAP.xl};
-`
-
-const SkillsContainer = styled(Box)`
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  gap: ${GAP.m};
-`
-
-const Items = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: ${GAP.m};
+  width: 70vw;
+  grid-auto-flow: column;
+  padding: 0 15vw ${GAP.l} 15vw;
   align-items: start;
+  gap: ${GAP.s};
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
     gap: ${GAP.s};
+    grid-auto-flow: row;
+    width: 85vw;
+    padding: 0 7.5vw ${GAP.l} 7.5vw;
   }
 `
 
-const InfoBlock = styled.div`
+const Wrapper = styled.div`
   display: grid;
-  justify-content: center;
-  justify-items: center;
-  grid-gap: ${GAP.s};
-  text-align: center;
-  padding-top: ${GAP.m};
+`
+
+const HorizontalGrid = styled.div`
+  display: grid;
+  grid-template-rows: auto;
+  max-width: 30vw;
+  gap: ${GAP.s};
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: ${GAP.s};
+    max-width: 100%;
+  }
 `

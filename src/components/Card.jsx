@@ -9,7 +9,7 @@ const Card = ({ image, headline, children, onClick, path }) => {
   return (
     <Wrapper onClick={onClick} to={path}>
       <Image src={image} />
-      <Text textStyle='h3'>{headline}</Text>
+      <Text textStyle='h4'>{headline}</Text>
       <Text>{children}</Text>
     </Wrapper>
   )
