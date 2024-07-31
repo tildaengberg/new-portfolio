@@ -9,25 +9,30 @@ const SkillsSection = () => {
       <HorizontalGrid>
         <Text textStyle='h3'>Education</Text>
         <Wrapper>
-          <Text textStyle='h4'>Umea University</Text>
+          <Text>M.Sc. Interaction and Design</Text>
           <Text>2019 - 2024</Text>
-          <Text>M.Sc. Programme in Interaction Technology and Design</Text>
+          <Text>Umeå University</Text>
         </Wrapper>
         <Wrapper>
-          <Text textStyle='h4'>Universitat Politecnica de Catalunya</Text>
+          <Text>B.Sc. Computer Science</Text>
+          <Text>2019 - 2024</Text>
+          <Text>Umeå University</Text>
+        </Wrapper>
+        <Wrapper>
+          <Text>Exchange semester - Master's degree AI</Text>
           <Text>2023</Text>
-          <Text>Exchange semester in Spain, Barcelona. Institution of Artificial Intelligence.</Text>
+          <Text>Universitat Politecnica de Catalunya, Barcelona</Text>
         </Wrapper>
       </HorizontalGrid>
       <HorizontalGrid>
         <Text textStyle='h3'>Tools</Text>
           <Wrapper>
-            <Text textStyle='h4'>Frontend</Text>
+            <Text>Frontend</Text>
             <Text>HTML/CSS | JavaScript | React.js | TypeScript | Cypress.io | Tailwind | styled-components</Text>
           </Wrapper>
           <Wrapper>
-            <Text textStyle='h4'>Backend</Text>
-            <Text>Java | C# | SQL | MongoDB | Express | Node.js | GraphQL</Text>
+            <Text>Backend</Text>
+            <Text>Java | C# | SQL | MongoDB | Express | Node.js | GraphQL | .NET | Python</Text>
           </Wrapper>
       </HorizontalGrid>
     </Container>

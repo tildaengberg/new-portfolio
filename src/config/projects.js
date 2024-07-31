@@ -8,6 +8,10 @@ import tabletalkhero from '../assets/projects/TableTalk/tabletalk-hero.jpg'
 import tabletalk1 from '../assets/projects/TableTalk/tabletalk1.jpg'
 import tabletalk2 from '../assets/projects/TableTalk/tabletalk2.jpg'
 
+import radioapp from '../assets/projects/RadioApp/radioapp.jpg'
+import radioapphero from '../assets/projects/RadioApp/radioapphero.jpg'
+import radioapp1 from '../assets/projects/RadioApp/radioapp1.jpg'
+
 import id from '../assets/projects/ID/id.jpg'
 import idhero from '../assets/projects/ID/id-hero.jpg'
 import id1 from '../assets/projects/ID/id1.jpg'
@@ -64,7 +68,7 @@ export const PROJECTS = [
     headline: 'Haunted Keyhunt',
     path: '/hauntedkeyhunt',
     image: hauntedkeyhunt,
-    description: 'AI/ML game in Unity',
+    description: 'AI/ML game in Unity.',
     hero: hauntedkeyhunthero,
     link: 'https://meek-haupia-ec2616.netlify.app/webgl/',
     information:
@@ -87,7 +91,7 @@ export const PROJECTS = [
     headline: 'TableTalk',
     path: '/tabletalk',
     image: tabletalk,
-    description: 'Learn more about each other.',
+    description: 'A social native app.',
     hero: tabletalkhero,
     information:
       'During a project course (Prototype development for mobile applications) an application was created from scratch. TableTalk is an application that will encourage a group to get to know each other better. It is a quiz game where mobiles are connected through a room code. Once all players have joined the game room, questions will be read out by a random player and then randomly assigned to another player. The basic idea of the application is that the mobiles should lie on the table and form a game board.',
@@ -107,10 +111,28 @@ export const PROJECTS = [
   },
   {
     tag: 'code',
+    headline: 'Radio App',
+    path: '/radio-app',
+    image: radioapp,
+    description: 'Java thread saftey and XML project.',
+    hero: radioapphero,
+    information:
+      'During a course, I completed an individual project in Java. The objective was to create an application that utilized an API to display radio channels and upcoming programs. The primary goal was to ensure the application was thread-safe in Java. There was less focus on the user interface in this project.',
+    tools: 'Java | Swing | API | XML & JSON',
+    duration: 'December 2022 - January 2023',
+    role: 'Development',
+    firstBlock: {
+      headline: 'Development',
+      image: radioapp1,
+      text: 'The application used two APIs to display channels and schedules. During the implementation, it was mandatory to use design patterns and handle exceptions. The solution features a simple UI and provides user messages if something goes wrong. In the end, the application works well, but it has room for improvement, but the main goal of making it thread-safe was achieved. I gained a lot of experience with threads in Java in combination with APIs.',
+    },
+  },
+  {
+    tag: 'code',
     headline: 'Interaction and Design',
     path: '/interaction-design',
     image: id,
-    description: 'New website for my program. ',
+    description: 'New website for Interaction and Design. ',
     hero: idhero,
     information:
       'During my time as a quality assistant on the program Interaction and Design, I took the opportunity to design and redesign the programs website. To streamline development, daysiUI was used to quickly build components for the website.',
@@ -133,7 +155,7 @@ export const PROJECTS = [
     headline: 'Drag and drop puzzle',
     path: '/puzzle',
     image: puzzle,
-    description: 'Simple JavaScript drag and drop puzzle.',
+    description: 'Drag and drop puzzle in JavaScript.',
     hero: puzzlehero,
     information:
       'During my free time, I challenged myself to create a drag and drop puzzle game using JavaScript. The objective of the game is to arrange a set of jumbled tiles to form a complete image. The game has a simple user interface that allows the player to drag and drop the tiles into the correct position.',
@@ -151,7 +173,7 @@ export const PROJECTS = [
     headline: 'This portfolio',
     path: '/portfolio',
     image: portfolio,
-    description: 'Redesign of this portfolio.',
+    description: 'Development and design of this portfolio.',
     hero: portfoliohero,
     information:
       'Over time, I have made many changes to my portfolio, tweaking the design and adding new projects as my skills have grown. However, when I look back on my earlier work, I realize that I want to start over from scratch and prioritize code quality. I believe that the underlying code structure is the most important aspect of any code project, as it affects the sites performance, maintainability, and scalability.',
@@ -169,7 +191,7 @@ export const PROJECTS = [
     headline: 'WeatherMap',
     path: '/weathermap',
     image: weathermap,
-    description: 'Combine two API is fun!',
+    description: 'Combined two API:s togheter.',
     hero: weathermaphero,
     information:
       'The project was a collaboration between me and a classmate, and our goal was to develop a website that could display weather history for various locations around the world during a specific month.',
@@ -187,7 +209,7 @@ export const PROJECTS = [
     headline: 'Cook together',
     path: '/cook-togheter',
     image: shysstkak,
-    description: 'A collabration with the company Schysst käk during a course.',
+    description: 'Collabration with "Schysst käk".',
     information:
       'As part of the Product Development in Media Technology course, our group worked on a project with Schysst Käk using the "Design-Build-Test" method. The project aimed to increase awareness about the concept of home-cooked meals as a solution for everyday life. Our goal was to develop a modern recipe application that was user-friendly and enjoyable to use.',
     tools: 'Figma',
@@ -211,10 +233,10 @@ export const PROJECTS = [
     path: '/beer-labels',
     image: labels,
     description:
-      'Fun side project to design beer labels for both bottle and can.',
+      'Side project to design beer labels.',
     hero: labelshero,
     information:
-      'In my spare time when there is time to spare, I design beer labels for Munksunds Craftbeer as a fun side project. Although it is mostly a fun thing, it has been as challenging and educational as other jobs. The biggest challenge is that it is a limited and small space where a lot of information has to fit. The labels I have made fit both cans and bottles.',
+      'In my spare time, I design beer labels for Munksunds Craftbeer as a fun side project. Although it is mostly a fun thing, it has been as challenging and educational as other jobs. The biggest challenge is that it is a limited and small space where a lot of information has to fit. The labels I have made fit both cans and bottles.',
     tools: 'Adobe Illustrator',
     duration: 'Spare time',
     role: 'Design',
@@ -229,7 +251,7 @@ export const PROJECTS = [
     headline: 'GarmAqua',
     path: '/garmaqua',
     image: garmaqua,
-    description: 'My first real website and project.',
+    description: 'My first published website.',
     hero: garmaquahero,
     information:
       'My first real project where my task was to develop a new website for the company GarmAqua. The company also wanted a new graphic profile, logo and flyer. The project was extensive and a big challenge as I had never published a website or developed in React before. However, I learned a lot along the way and it was really fun.',
@@ -252,7 +274,7 @@ export const PROJECTS = [
     headline: 'Student of the year',
     path: '/student-of-the-year',
     image: studentofyear,
-    description: 'Every year one student at my program gets an award',
+    description: 'Every year one student at my program gets awarded.',
     hero: studentofyearhero,
     information: 'I am proud to have been honored with the Student of the Year award in my program (Interaction and Design). This award is given annually to a student in the graduating class. Every student at the program has their own vote and could also write a motivation for the vote.',
     firstBlock: {
@@ -267,7 +289,7 @@ export const PROJECTS = [
     path: '/solwe',
     image: solwe,
     description:
-      'Participated in NASA hackathon to prototype solar cell user solution.',
+      'A prototype solar cell user solution.',
     hero: solwehero,
     information:
       'Me and my friends, also classmates participated in the NASA Space Apps Challenge which is a global hackathon that lasts for 48 hours where a challenge has to be solved.',
@@ -291,7 +313,7 @@ export const PROJECTS = [
     path: '/goodtechhack',
     image: goodtech,
     description:
-      'Participated in Good Tech Hack to solve social inclusion in school.',
+      'A prototype to solve social inclusion in school.',
     hero: goodtechhero,
     information:
       'Me and my friends, also classmates participated in Good Tech Hack which is a hackathon that lasts for 24 hours where a challenge has to be solved. Students, the public sector and companies could participate in the competition.',
@@ -315,7 +337,7 @@ export const PROJECTS = [
     path: '/nasa-hackathon',
     image: nasa,
     description:
-      'Participated in NASA hackathon for prototyping a user solution for communication with Mars.',
+      'A prototype for communication with Mars.',
     hero: nasahero,
     information:
       'Me and three people from Finland and Sweden participated in NASAs Hackathon Space Apps Challenge held in Vaasa. The hackathon lasts for 48 hours and was remote because of the pandemic.',

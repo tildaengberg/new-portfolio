@@ -6,7 +6,7 @@ import About from '../../components/About'
 import SkillsSection from './SkillsSection'
 import { GAP } from '../../config/gap'
 import Hero from '../../components/Hero'
-import hero from '../../assets/hero_alt.jpg'
+import heroimg from '../../assets/hero/hero_alt3.jpg'
 import { COLORS } from '../../config/colors'
 import Text from '../../components/Text'
 
@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <Container>
       <Hero
-        headline='Hi, I am Tilda, a student and future developer and this portfolio will show you...'
-        image={hero}
+        headline='Hi, I am Tilda, a developer and this portfolio will show you...'
+        image={heroimg}
       >
         ...what I can do with a keyboard and a cup of coffee ☕. Explore some of
         the projects I've been working on and see what I've been up to during my
@@ -25,9 +25,9 @@ const Home = () => {
       <ProjectSection />
       <AboutWrapper id='about'>
         <About headline='There is no place like 127.0.0.1' image={minime}>
-          I am a 23-year-old student from Piteå who is currently studying for a
-          master's degree in Interaction and Design at Umeå University. I'm currently in my fifth and last year of the program,
-          approaching the end of my studies.
+          I am a 24-year-old from Piteå, currently living and working as a developer in Stockholm.
+          I hold an M.Sc. in Interaction and Design and a B.Sc. in Computer Science from Umeå University.
+          In my spare time, I enjoy being out in nature or going for a run.
         </About>
       </AboutWrapper>
       <SkillsSection />

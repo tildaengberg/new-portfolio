@@ -5,10 +5,16 @@ import { GAP } from '../config/gap'
 import Box from '../helpers/Box'
 import { COLORS } from '../config/colors'
 import { Link } from 'react-scroll'
+import backgroundSvg from '../assets/lines.svg';
 
 const Hero = ({ headline, children, image }) => {
   return (
     <Container>
+      <Navbar>
+        <Text textStyle='navbar' link='/' navbar='true'>
+          Tilda Engberg
+        </Text>
+      </Navbar>
       <Box>
         <Wrapper>
           <TextWrapper>
@@ -18,7 +24,7 @@ const Hero = ({ headline, children, image }) => {
               <Button>Contact me!</Button>
             </Link>
           </TextWrapper>
-          <ImageWrapper src={image}></ImageWrapper>
+          <ImageWrapper src={image} />
         </Wrapper>
       </Box>
     </Container>
@@ -28,7 +34,18 @@ const Hero = ({ headline, children, image }) => {
 export default Hero
 
 const Container = styled.div`
-  background-color: ${COLORS.green};
+  background-image: url(${backgroundSvg});
+  background-color: ${COLORS.green}; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+`
+
+const Navbar = styled.div`
+  max-width: 100vw;
+  height: 5vh;
+  padding: ${GAP.s} 0 0 ${GAP.s};
 `
 
 const Wrapper = styled.div`

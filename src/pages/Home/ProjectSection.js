@@ -82,7 +82,7 @@ const ProjectWrapper = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, min-content);
+  grid-template-columns: repeat(4, min-content);
   gap: ${GAP.m};
   align-items: start;
   @media (max-width: 991px) {

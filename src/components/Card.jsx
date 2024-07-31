@@ -30,7 +30,7 @@ const Wrapper = styled(Link)`
 `
 
 const Image = styled.img`
-  max-width: 300px;
+  max-width: 225px;
   background-color: grey;
   @media (max-width: 991px) {
     max-width: 40vw;

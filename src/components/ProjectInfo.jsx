@@ -5,10 +5,16 @@ import XsInfo from './XsInfo'
 import { GAP } from '../config/gap'
 import { COLORS } from '../config/colors'
 import Box from '../helpers/Box'
+import backgroundSvg from '../assets/lines.svg';
 
 const ProjectInfo = ({ headline, children, tools, duration, role, img, link }) => {
   return (
     <Container>
+    <Navbar>
+        <Text textStyle='navbar' link='/' navbar='true'>
+          Tilda Engberg
+        </Text>
+      </Navbar>
       <Box>
         <Wrapper>
           <TextWrapper>
@@ -41,7 +47,18 @@ const ProjectInfo = ({ headline, children, tools, duration, role, img, link }) =
 export default ProjectInfo
 
 const Container = styled.div`
+  background-image: url(${backgroundSvg});
   background-color: ${COLORS.green};
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+`
+
+const Navbar = styled.div`
+  max-width: 100vw;
+  height: 5vh;
+  padding: ${GAP.s} 0 0 ${GAP.s};
 `
 
 const Wrapper = styled.div`
