@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /hauntedkeyhunt
+Allow: /tabletalk
+Allow: /radio-app
+Allow: /interaction-design
+Allow: /puzzle
+Allow: /portfolio
+Allow: /weathermap
+Allow: /cook-togheter
+Allow: /beer-labels
+Allow: /garmaqua
+Allow: /student-of-the-year
+Allow: /solwe
+Allow: /goodtechhack
+Allow: /nasa-hackathon
