@@ -67,7 +67,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'Haunted Keyhunt',
     path: '/hauntedkeyhunt',
-    image: hauntedkeyhunt,
+    image: {
+      src: hauntedkeyhunt,
+      alt: 'Haunted Keyhunt'
+    },
     description: 'AI/ML game in Unity.',
     hero: hauntedkeyhunthero,
     link: 'https://meek-haupia-ec2616.netlify.app/webgl/',
@@ -90,7 +93,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'TableTalk',
     path: '/tabletalk',
-    image: tabletalk,
+    image: {
+      src: tabletalk,
+      alt: 'TableTalk'
+    },
     description: 'A social native app.',
     hero: tabletalkhero,
     information:
@@ -113,7 +119,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'Radio App',
     path: '/radio-app',
-    image: radioapp,
+    image: {
+      src: radioapp,
+      alt: 'Radio App'
+    },
     description: 'Java thread saftey and XML project.',
     hero: radioapphero,
     information:
@@ -131,7 +140,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'Interaction and Design',
     path: '/interaction-design',
-    image: id,
+    image: {
+      src: id,
+      alt: 'Interaction and Design'
+    },
     description: 'New website for Interaction and Design. ',
     hero: idhero,
     information:
@@ -154,7 +166,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'Drag and drop puzzle',
     path: '/puzzle',
-    image: puzzle,
+    image: {
+      src: puzzle,
+      alt: 'Drag and drop puzzle'
+    },
     description: 'Drag and drop puzzle in JavaScript.',
     hero: puzzlehero,
     information:
@@ -172,7 +187,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'This portfolio',
     path: '/portfolio',
-    image: portfolio,
+    image: {
+      src: portfolio,
+      alt: 'This portfolio'
+    },
     description: 'Development and design of this portfolio.',
     hero: portfoliohero,
     information:
@@ -190,7 +208,10 @@ export const PROJECTS = [
     tag: 'code',
     headline: 'WeatherMap',
     path: '/weathermap',
-    image: weathermap,
+    image: {
+      src: weathermap,
+      alt: 'WeatherMap'
+    },
     description: 'Combined two API:s togheter.',
     hero: weathermaphero,
     information:
@@ -208,7 +229,10 @@ export const PROJECTS = [
     tag: 'design',
     headline: 'Cook together',
     path: '/cook-togheter',
-    image: shysstkak,
+    image: {
+      src: shysstkak,
+      alt: 'Cook together'
+    },
     description: 'Collabration with "Schysst käk".',
     information:
       'As part of the Product Development in Media Technology course, our group worked on a project with Schysst Käk using the "Design-Build-Test" method. The project aimed to increase awareness about the concept of home-cooked meals as a solution for everyday life. Our goal was to develop a modern recipe application that was user-friendly and enjoyable to use.',
@@ -231,7 +255,10 @@ export const PROJECTS = [
     tag: 'design',
     headline: 'Beer labels',
     path: '/beer-labels',
-    image: labels,
+    image: {
+      src: labels,
+      alt: 'Beer labels'
+    },
     description:
       'Side project to design beer labels.',
     hero: labelshero,
@@ -250,7 +277,10 @@ export const PROJECTS = [
     tag: 'design',
     headline: 'GarmAqua',
     path: '/garmaqua',
-    image: garmaqua,
+    image: {
+      src: garmaqua,
+      alt: 'GarmAqua'
+    },
     description: 'My first published website.',
     hero: garmaquahero,
     information:
@@ -273,7 +303,10 @@ export const PROJECTS = [
     tag: 'award',
     headline: 'Student of the year',
     path: '/student-of-the-year',
-    image: studentofyear,
+    image: {
+      src: studentofyear,
+      alt: 'Student of the year'
+    },
     description: 'Every year one student at my program gets awarded.',
     hero: studentofyearhero,
     information: 'I am proud to have been honored with the Student of the Year award in my program (Interaction and Design). This award is given annually to a student in the graduating class. Every student at the program has their own vote and could also write a motivation for the vote.',
@@ -287,7 +320,10 @@ export const PROJECTS = [
     tag: 'award',
     headline: 'NASA Hackathon Global nominee',
     path: '/solwe',
-    image: solwe,
+    image: {
+      src: solwe,
+      alt: 'NASA Hackathon Global nominee'
+    },
     description:
       'A prototype solar cell user solution.',
     hero: solwehero,
@@ -311,7 +347,10 @@ export const PROJECTS = [
     tag: 'award',
     headline: 'Winner of Good Tech Hack',
     path: '/goodtechhack',
-    image: goodtech,
+    image: {
+      src: goodtech,
+      alt: 'Winner of Good Tech Hack'
+    },
     description:
       'A prototype to solve social inclusion in school.',
     hero: goodtechhero,
@@ -335,7 +374,10 @@ export const PROJECTS = [
     tag: 'award',
     headline: 'NASA Hackathon Global award',
     path: '/nasa-hackathon',
-    image: nasa,
+    image: {
+      src: nasa,
+      alt: 'NASA Hackathon Global award'
+    },
     description:
       'A prototype for communication with Mars.',
     hero: nasahero,

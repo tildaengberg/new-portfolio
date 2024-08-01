@@ -9,7 +9,7 @@ import { GAP } from '../config/gap'
 const About = ({ headline, children, image }) => {
   return (
     <Container>
-      <ImageWrapper src={image} />
+      <ImageWrapper src={image} alt='Tilda as a child'/>
       <TextWrapper>
         <Text textStyle='h2'>{headline}</Text>
         <Text>{children}</Text>

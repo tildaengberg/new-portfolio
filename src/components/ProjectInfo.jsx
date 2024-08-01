@@ -37,7 +37,7 @@ const ProjectInfo = ({ headline, children, tools, duration, role, img, link }) =
               </Info>
             )}
           </TextWrapper>
-          <ImageWrapper src={img} />
+          <ImageWrapper src={img} alt='Hero project'/>
         </Wrapper>
       </Box>
     </Container>

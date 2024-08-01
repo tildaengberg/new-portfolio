@@ -8,7 +8,7 @@ import { COLORS } from '../config/colors'
 const Card = ({ image, headline, children, onClick, path }) => {
   return (
     <Wrapper onClick={onClick} to={path}>
-      <Image src={image} />
+      <Image src={image.src} alt={image.alt} />
       <Text textStyle='h4'>{headline}</Text>
       <Text>{children}</Text>
     </Wrapper>

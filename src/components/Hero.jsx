@@ -20,11 +20,11 @@ const Hero = ({ headline, children, image }) => {
           <TextWrapper>
             <Text textStyle='h1'>{headline}</Text>
             <Text>{children}</Text>
-            <Link to='about' smooth={true} duration={500}>
+            <Link to='about' smooth={true} duration={500} href='#about'>
               <Button>Contact me!</Button>
             </Link>
           </TextWrapper>
-          <ImageWrapper src={image} />
+          <ImageWrapper src={image} alt='Hero of portfolio'/>
         </Wrapper>
       </Box>
     </Container>
